@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/gameFunctions/rope.unity
+- path: Assets/Scenes/firstPerson/player/pickUpObjectsUserInteraction.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

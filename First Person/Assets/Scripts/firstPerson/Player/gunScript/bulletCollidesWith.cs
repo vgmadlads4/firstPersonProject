@@ -22,6 +22,19 @@ public class bulletCollidesWith : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (collision.transform.tag.Equals("Wall"))
+        {
+            Destroy(this.gameObject);
+        }
+        if (collision.transform.tag.Equals("Ceiling"))
+        {
+            Destroy(this.gameObject);
+        }
+        if (collision.transform.tag.Equals("Ladder"))
+        {
+            Destroy(this.gameObject);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,6 +50,10 @@ public class bulletCollidesWith : MonoBehaviour
         if (other.CompareTag("Ceiling"))
         {
             Destroy(this.gameObject, 5f);
+        }
+        if (other.CompareTag("Ladder"))
+        {
+            Destroy(this.gameObject);
         }
     }
 }

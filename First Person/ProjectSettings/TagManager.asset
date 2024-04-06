@@ -20,6 +20,9 @@ TagManager:
   - Ceiling
   - playerBullet
   - enemyBullet
+  - Swimmable
+  - Ladder
+  - pickUpable
   layers:
   - Default
   - TransparentFX
